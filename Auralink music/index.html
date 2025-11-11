@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraLink Music 🎵</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/727/727245.png">
+</head>
+<body>
+
+  <!-- SPLASH SCREEN -->
+  <div id="splash">
+    <h1 class="logo">AuraLink 🎵</h1>
+    <p class="tagline">Feel the Beat, Live the Sound</p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="mainContent" style="display: none;">
+    <!-- HEADER -->
+    <header>
+      <h1>AuraLink 🎶</h1>
+      <input id="searchInput" type="text" placeholder="Search songs...">
+      <div id="status"></div>
+    </header>
+
+    <!-- NOW PLAYING -->
+    <div id="nowPlaying" class="now-playing">🎧 No track playing</div>
+    <audio id="audioPlayer" controls></audio>
+
+    <!-- SEARCH RESULTS -->
+    <section id="resultsSection">
+      <h2>Search Results</h2>
+      <div id="results" class="results"></div>
+    </section>
+
+    <!-- TRENDING SONGS -->
+    <section id="trendingSection">
+      <h2>🔥 Trending Songs</h2>
+      <div id="trendingList" class="results"></div>
+    </section>
+
+    <!-- MINI PLAYER -->
+    <div id="miniPlayer" class="collapsed">
+      <img id="playerCover" src="" alt="cover">
+      <div class="playerInfo">
+        <h4 id="playerTitle">No track playing</h4>
+        <div class="controls">
+          <button id="prevBtn">⏮</button>
+          <button id="playPause">▶</button>
+          <button id="nextBtn">⏭</button>
+          <a id="downloadBtn" href="#" target="_blank">⬇ Download</a>
+        </div>
+      </div>
+      <button id="collapseBtn">⬇</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
